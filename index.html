@@ -236,6 +236,26 @@
                     contentPay.style.display = 'none';
                 }
             }
+
+            document.getElementById('paypal-button').onclick = function () {
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Thanh toán PayPal thành công",
+                    showConfirmButton: false,
+                    timer: 1900
+                });
+            };
+
+            document.getElementById('vnpay-button').onclick = function () {
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Thanh toán VNPAY thành công",
+                    showConfirmButton: false,
+                    timer: 1900
+                });
+            };
         </script>
     </div>
 <!--</div>-->
